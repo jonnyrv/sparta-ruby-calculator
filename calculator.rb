@@ -1,6 +1,6 @@
-class CalculatorNumbers
+class CalculatorNumber
     def get_values
-        gets.split(" ").map{ |s| s.chomp.to_i }
+        gets.split(" ").map{ |s| s.chomp.to_f }
     end
        
     def operators operator, list_of_num
@@ -9,7 +9,7 @@ class CalculatorNumbers
     end
 end
     
-class Operate < CalculatorNumbers
+class Operation < CalculatorNumber
 
     def main 
         type_of_calculator
@@ -55,7 +55,7 @@ class Operate < CalculatorNumbers
         puts "Would you like to [power], or [square root]?" 
         case gets.chomp.downcase
         when 'power'
-          puts "Which number would you like to power?"
+          puts "Which base number and exponent would you like?"
           list_of_num = get_values
           operators :**, list_of_num
             

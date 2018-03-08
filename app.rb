@@ -1,5 +1,5 @@
 require_relative "calculator.rb"
 
-calculator = Operate.new
+calculator = Operation.new
 
 calculator.main
