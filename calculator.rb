@@ -1,5 +1,3 @@
-
-
 class CalculatorNumbers
     def get_values
         gets.split(" ").map{ |s| s.chomp.to_i }
@@ -10,7 +8,6 @@ class CalculatorNumbers
         puts "Result is: #{response}" 
     end
 end
-    
     
 class Operate < CalculatorNumbers
 
